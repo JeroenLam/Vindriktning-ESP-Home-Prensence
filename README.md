@@ -13,14 +13,16 @@ Integrating the Vindriktning air quality sensor with ESP Home and adding temprat
 
 ## Pinout and pins used
 ![esp pinout](https://files.seeedstudio.com/wiki/XIAO_WiFi/pin_map-2.png)
-- Image from [wiki](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/)
+Image from [wiki](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/)
 
-- D4 : SDA : I2C for BH1750, AHT20, BMP280
-- D5 : SCL : I2C for BH1750, AHT20, BMP280
-- D6 : TX0 : UART (256000) for LD2410
-- D7 : RX0 : UART (256000) for LD2410
-- D8 : TX1 : UART (9600) for Vindriktning
-- D9 : RX1 : UART (9600) for Vindriktning
+| Pin | Use | Sensor |
+|-----|-----|--------|
+| D4  | SDA (I2C)    |    BH1750, AHT20, BMP280    |
+| D5  | SCL (I2C)    |    BH1750, AHT20, BMP280    |
+| D6  | TX (UART 256000)    |    LD2410    |
+| D7  | RX (UART 256000)    |    LD2410    |
+| D8  | TX (UART 9600)    |    Vindriktning    |
+| D9  | RX (UART 9600)    |    Vindriktning    |
 
 ## Voltages
 - LD2410 : 5V
